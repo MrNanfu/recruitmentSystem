@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<AnchorPane prefHeight="482.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BidCallController">
+   <children>
+      <Accordion layoutX="112.0" layoutY="103.0" />
+      <Label layoutX="224.0" layoutY="14.0" prefHeight="29.0" prefWidth="153.0" text="投标信息投报">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="71.0" text="我需要:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="tag" layoutX="214.0" layoutY="69.0" prefHeight="27.0" prefWidth="223.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="知识产权" />
+               <String fx:value="工商财税" />
+               <String fx:value="科技服务" />
+               <String fx:value="法律人事" />
+               <String fx:value="印刷服务" />
+               <String fx:value="装修服务" />
+               <String fx:value="翻译服务" />
+               <String fx:value="营销咨询" />
+               <String fx:value="金融服务" />
+               <String fx:value="品牌设计" />
+               <String fx:value="影视动漫" />
+               <String fx:value="游戏" />
+               <String fx:value="IT-软件" />
+               <String fx:value="电商服务" />
+               <String fx:value="工业设计" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Label layoutX="137.0" layoutY="120.0" text="手机号:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPhoneNum" layoutX="214.0" layoutY="118.0" prefHeight="27.0" prefWidth="223.0" />
+      <Label layoutX="137.0" layoutY="169.0" text="标    题:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTopic" layoutX="214.0" layoutY="167.0" prefHeight="27.0" prefWidth="223.0" />
+      <Label layoutX="119.0" layoutY="212.0" text="正文内容:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtContent" layoutX="214.0" layoutY="212.0" prefHeight="133.0" prefWidth="326.0" />
+      <Label layoutX="70.0" layoutY="359.0" text="预期成交金额:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="timeLimit" layoutX="447.0" layoutY="357.0" prefHeight="27.0" prefWidth="78.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="一周内" />
+               <String fx:value="一个月内" />
+               <String fx:value="三个月内" />
+               <String fx:value="半年内" />
+               <String fx:value="一年内" />
+               <String fx:value="三年内" />
+               <String fx:value="三年以上" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Label layoutX="362.0" layoutY="359.0" text="时间期限:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="CallBidButton" layoutX="94.0" layoutY="420.0" mnemonicParsing="false" onAction="#OnClickCallBid" prefHeight="39.0" prefWidth="114.0" text="招标" />
+      <Button layoutX="362.0" layoutY="420.0" mnemonicParsing="false" onAction="#OnClickReturn" prefHeight="39.0" prefWidth="114.0" text="返回" />
+      <TextField fx:id="txtExpMoney" layoutX="189.0" layoutY="357.0" prefHeight="27.0" prefWidth="139.0" />
+      <Label layoutX="70.0" layoutY="337.0" text="请输入数字" />
+   </children>
+</AnchorPane>

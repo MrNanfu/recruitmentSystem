@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModelSelectController">
+   <children>
+      <Button onAction="#OnclickAdmButton" layoutX="117.0" layoutY="174.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="87.0" text="管理员模式" />
+      <Button onAction="#OnclickUserButton" layoutX="413.0" layoutY="174.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="87.0" text="用户模式" />
+   </children>
+</AnchorPane>

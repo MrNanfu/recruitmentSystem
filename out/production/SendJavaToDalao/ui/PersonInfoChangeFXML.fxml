@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.212" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PersonInfoChangeController">
+   <children>
+      <Label layoutX="148.0" layoutY="31.0" text="单位：" />
+      <Label layoutX="148.0" layoutY="74.0" text="地点：" />
+      <Label layoutX="142.0" layoutY="114.0" text="预期储备：" />
+      <Label layoutX="63.0" layoutY="145.0" text="主攻方向：" />
+      <CheckBox fx:id="box1" layoutX="52.0" layoutY="185.0" mnemonicParsing="false" text="知识产权" />
+      <CheckBox fx:id="box2" layoutX="149.0" layoutY="185.0" mnemonicParsing="false" text="工商财税" />
+      <CheckBox fx:id="box3" layoutX="258.0" layoutY="185.0" mnemonicParsing="false" text="科技服务" />
+      <CheckBox fx:id="box4" layoutX="355.0" layoutY="185.0" mnemonicParsing="false" text="法律人事" />
+      <CheckBox fx:id="box5" layoutX="462.0" layoutY="185.0" mnemonicParsing="false" text="印刷服务" />
+      <CheckBox fx:id="box6" layoutX="52.0" layoutY="229.0" mnemonicParsing="false" text="装修服务" />
+      <CheckBox fx:id="box7" layoutX="149.0" layoutY="229.0" mnemonicParsing="false" text="翻译服务" />
+      <CheckBox fx:id="box8" layoutX="258.0" layoutY="229.0" mnemonicParsing="false" text="营销咨询" />
+      <CheckBox fx:id="box9" layoutX="355.0" layoutY="229.0" mnemonicParsing="false" text="金融服务" />
+      <CheckBox fx:id="box10" layoutX="462.0" layoutY="229.0" mnemonicParsing="false" text="品牌设计" />
+      <CheckBox fx:id="box11" layoutX="52.0" layoutY="270.0" mnemonicParsing="false" text="影视动漫" />
+      <CheckBox fx:id="box12" layoutX="355.0" layoutY="270.0" mnemonicParsing="false" text="电商服务" />
+      <CheckBox fx:id="box13" layoutX="258.0" layoutY="270.0" mnemonicParsing="false" text="IT/软件" />
+      <CheckBox fx:id="box14" layoutX="149.0" layoutY="270.0" mnemonicParsing="false" text="游戏" />
+      <CheckBox fx:id="box15" layoutX="462.0" layoutY="270.0" mnemonicParsing="false" text="工业设计" />
+      <Button fx:id="confirmchange" onAction="#PersonInfoChangeController" layoutX="146.0" layoutY="329.0" mnemonicParsing="false" text="确认修改" />
+      <Button fx:id="returnpersoninfo" onAction="#PersonInfoChangeController" layoutX="343.0" layoutY="329.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="65.0" text="返回" />
+      <TextField fx:id="work" layoutX="199.0" layoutY="26.0" />
+       <ComboBox fx:id="expmoney" layoutX="217.0" layoutY="109.0" prefHeight="27.0" prefWidth="97.0">
+           <items>
+               <FXCollections fx:factory="observableArrayList">
+                   <String fx:value="100以下" />
+                   <String fx:value="100～1k" />
+                   <String fx:value="1k～5k" />
+                   <String fx:value="5k～1w" />
+                   <String fx:value="1w～3w" />
+                   <String fx:value="3w～50w" />
+                   <String fx:value="50w以上" />
+               </FXCollections>
+           </items>
+       </ComboBox>
+      <ComboBox fx:id="place" layoutX="199.0" layoutY="69.0" prefHeight="27.0" prefWidth="167.0" >
+       <items>
+           <FXCollections fx:factory="observableArrayList">
+               <String fx:value="湖南省" />
+               <String fx:value="广州市" />
+               <String fx:value="北京市" />
+               <String fx:value="上海市" />
+               <String fx:value="山东省" />
+               <String fx:value="湖北省" />
+               <String fx:value="江苏省" />
+           </FXCollections>
+       </items>
+   </ComboBox>
+   </children>
+</AnchorPane>

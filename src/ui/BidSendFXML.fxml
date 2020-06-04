@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="530.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BidSendController">
+   <children>
+      <Label layoutX="301.0" layoutY="25.0" text="招标信息">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="callNameLabel" layoutX="36.0" layoutY="78.0" text="投标人:xxx">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNumLabel" layoutX="220.0" layoutY="78.0" text="联系方式:xxxxxxxxxxxxx">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="topcicLabel" layoutX="36.0" layoutY="139.0" text="标题:xxxxxxxxxxx">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="188.0" text="正文内容:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="contentTxt" layoutX="36.0" layoutY="225.0" prefHeight="178.0" prefWidth="585.0" />
+      <Label fx:id="expMoneyLabel" layoutX="70.0" layoutY="424.0" text="预期金额:xxxxxxxx">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="limTimeLabel" layoutX="372.0" layoutY="424.0" text="预期完成时间:xxxxxxxx">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="throwButton" onAction="#throwButton" layoutX="130.0" layoutY="473.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="96.0" text="我要投标" />
+      <Button fx:id="returnButton" onAction="#returnButton" layoutX="404.0" layoutY="473.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="96.0" text="返回" />
+   </children>
+</AnchorPane>

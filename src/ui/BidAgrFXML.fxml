@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="625.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BidAgrController">
+   <children>
+      <Label layoutX="24.0" layoutY="27.0" />
+      <Label fx:id="topicLabel" layoutX="37.0" layoutY="36.0" text="标题:xxxxxxx">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="contentLabel" layoutX="37.0" layoutY="74.0" text="正文内容:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="contentTextArea" layoutX="33.0" layoutY="104.0" prefHeight="170.0" prefWidth="576.0" />
+      <Label fx:id="expMoneyLabel" layoutX="55.0" layoutY="286.0" text="预期金额:xxxx">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLimLabel" layoutX="400.0" layoutY="286.0" text="预期完成时间:xxxxxx">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="throwUserLabel" layoutX="37.0" layoutY="320.0" text="申请投标人:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ListView fx:id="throwUserListView" layoutX="33.0" layoutY="360.0" prefHeight="200.0" prefWidth="576.0" />
+      <Button fx:id="ReturnBidDetail" onAction="#OnclickReturnBidDetail" layoutX="257.0" layoutY="577.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="96.0" text="返回" />
+      <Label fx:id="stateLabel" layoutX="402.0" layoutY="323.0" text="完成情况:" />
+      <Button fx:id="confirmButton" onAction="#OnclickconfirmButton" layoutX="522.0" layoutY="31.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="78.0" text="确认完成" />
+   </children>
+</AnchorPane>

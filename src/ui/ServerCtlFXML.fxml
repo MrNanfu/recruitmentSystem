@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="412.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8.0.212" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerCtlController">
+   <children>
+      <Label layoutX="250.0" layoutY="29.0" text="控制中心">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" onAction="#Onclickstart" layoutX="93.0" layoutY="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="102.0" text="启动" />
+      <Button fx:id="stopButton" onAction="#Onclickstop" layoutX="419.0" layoutY="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="96.0" text="停止" />
+      <Button fx:id="advertisementButton" layoutX="258.0" layoutY="254.0" mnemonicParsing="false" onAction="#adverControl" text="广告控制" />
+      <Button fx:id="infoButton" layoutX="384.0" layoutY="254.0" mnemonicParsing="false" onAction="#serverInfo" text="信息控制" />
+      <Button fx:id="dataCount" layoutX="138.0" layoutY="254.0" mnemonicParsing="false" onAction="#dataShow" text="数据统计" />
+   </children>
+</AnchorPane>
